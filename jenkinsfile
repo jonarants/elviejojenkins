@@ -4,16 +4,16 @@ pipeline {
     }
     
     stages {
-        stage('Saludo existencial') {
+        stage('Saludo del viejo y decrepito jenkins') {
             steps {
-                echo "Me mareo la documentación, pero tuvimos éxito a pesar del fracaso" 
+                echo "Me mareo la documentación, tuve que sacar la ip del agente, pero ya después de eso funciono" 
             }
         }
     }
     
     post {
         success {
-            echo "¡El pipeline terminó con éxito! (aunque el mensaje era confuso)"
+            echo "¡El pipeline terminó y ya puedo irme a dormir bwahahahaha"
         }
     }
 }
