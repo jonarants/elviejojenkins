@@ -1,0 +1,19 @@
+pipeline {
+    agent {
+        label 'agent1'  // Se ejecuta específicamente en el nodo/agente llamado "agent1"
+    }
+    
+    stages {
+        stage('Saludo existencial') {
+            steps {
+                echo "Me mareo la documentación, pero tuvimos éxito a pesar del fracaso" 
+            }
+        }
+    }
+    
+    post {
+        success {
+            echo "¡El pipeline terminó con éxito! (aunque el mensaje era confuso)"
+        }
+    }
+}
